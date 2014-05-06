@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+	<class name="dao.hibernate.pojo.User" table="users">
+
+		<id name="userid" type="java.lang.String" column="userid">
+		</id>
+
+		<property name="password" type="java.lang.String" column="password"
+			not-null="true" />
+		<property name="isupport" type="java.lang.String" column="isupport"
+			not-null="false" />
+
+		<property name="emailId" type="java.lang.String" column="email_id"
+			not-null="false" />
+
+	</class>
+</hibernate-mapping>

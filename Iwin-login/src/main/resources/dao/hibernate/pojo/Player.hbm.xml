@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+	<class name="dao.hibernate.pojo.Player" table="player">
+
+		<id name="name" type="java.lang.String" column="name">
+		</id>
+
+		<property name="category" type="java.lang.String" column="category"
+			not-null="true" />
+
+		<property name="teamname" type="java.lang.String" column="teamname"
+			not-null="true" />
+	</class>
+</hibernate-mapping>

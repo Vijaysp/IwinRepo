@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+	<class name="dao.hibernate.pojo.Prediction" table="prediction">
+
+		<id name="matchid" type="java.lang.String" column="matchid">
+		</id>
+
+		<property name="matchDate" type="java.lang.String" column="matchDate"
+			not-null="true" />
+		<property name="winningTeam" type="java.lang.String" column="winningTeam"
+			not-null="true" />
+		<property name="mom" type="java.lang.String" column="mom"
+			not-null="true" />
+
+
+		<property name="userid" type="java.lang.String" column="userid"
+			not-null="true" />
+		<property name="points" type="java.lang.Integer" column="points"
+			not-null="true" />
+	</class>
+</hibernate-mapping>

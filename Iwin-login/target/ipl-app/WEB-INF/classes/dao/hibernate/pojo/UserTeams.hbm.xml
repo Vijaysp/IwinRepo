@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+	<class name="dao.hibernate.pojo.UserTeam" table="userteam">
+
+		<id name="userid" type="java.lang.String" column="userid">
+		</id>
+
+		<property name="teamName" type="java.lang.String" column="NAME"
+			not-null="true" />
+
+		<property name="player1" type="java.lang.String" column="PLAYER1"
+			not-null="true" />
+
+		<property name="player2" type="java.lang.String" column="PLAYER2"
+			not-null="true" />
+
+		<property name="player3" type="java.lang.String" column="PLAYER3"
+			not-null="true" />
+
+		<property name="player4" type="java.lang.String" column="PLAYER4"
+			not-null="true" />
+
+		<property name="player5" type="java.lang.String" column="PLAYER5"
+			not-null="true" />
+
+		<property name="player6" type="java.lang.String" column="PLAYER6"
+			not-null="true" />
+
+		<property name="player7" type="java.lang.String" column="PLAYER7"
+			not-null="true" />
+
+		<property name="player8" type="java.lang.String" column="PLAYER8"
+			not-null="true" />
+
+		<property name="player9" type="java.lang.String" column="PLAYER9"
+			not-null="true" />
+
+		<property name="player10" type="java.lang.String" column="PLAYER10"
+			not-null="true" />
+
+		<property name="player11" type="java.lang.String" column="PLAYER11"
+			not-null="true" />
+
+		<property name="substitute" type="java.lang.String" column="SUBSTITUTE"
+			not-null="true" />
+
+		<property name="lastUpdated" type="java.sql.Timestamp"
+			column="LASTUPDATED" />
+
+		<property name="version" type="java.lang.Integer" column="VERSION" />
+	</class>
+</hibernate-mapping>

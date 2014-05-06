@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+	<class name="dao.hibernate.pojo.Scorecard" table="scorecard">
+
+		<id name="matchid" type="java.lang.String" column="matchid">
+		</id>
+
+		<property name="matchDate" type="java.lang.String" column="matchDate"
+			not-null="true" />
+
+		<property name="playerName" type="java.lang.String" column="player"
+			not-null="true" />
+
+		<property name="runsScored" type="java.lang.Integer" column="runs_scored"
+			not-null="true" />
+
+		<property name="wicketsTaken" type="java.lang.Integer"
+			column="wickets_taken" not-null="true" />
+
+		<property name="catchesHeld" type="java.lang.Integer" column="catches_held"
+			not-null="true" />
+
+		<property name="stumpings" type="java.lang.Integer" column="stumpings"
+			not-null="true" />
+
+		<property name="sixes" type="java.lang.Integer" column="sixes"
+			not-null="true" />
+
+		<property name="isWicketKeeper" type="java.lang.String"
+			column="isWktKeeper" not-null="true" />
+
+		<property name="isHattrick" type="java.lang.String" column="hattrick"
+			not-null="true" />
+
+		<property name="wonMoM" type="java.lang.String" column="mom"
+			not-null="true" />
+
+		<property name="duckOrGD" type="java.lang.String" column="duck_or_gd"
+			not-null="true" />
+
+		<property name="points" type="java.lang.Integer" column="points"
+			not-null="true" />
+
+	</class>
+</hibernate-mapping>
