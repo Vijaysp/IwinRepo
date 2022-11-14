@@ -8,7 +8,7 @@
 	<name>Iwin_login</name>
 	<description>Iwin_login</description>
 	<properties>
-		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+		<org.springframework.version>3.2.18.RELEASE</org.springframework.version>
 	</properties>
 	<dependencies>
 		<!-- Shared version number properties -->
